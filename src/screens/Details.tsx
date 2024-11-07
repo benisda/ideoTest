@@ -22,8 +22,8 @@ const Details = ({ navigation }: any) => {
     const detailedPokemon = pokedexContext?.currentPokemon;
     const [tilePokemon, setTilePokemon] = useState<any>(pokedexContext.currentPokemon);
     const horizontalDetailsConfig = [
-        { label: 'Forms', value: 'forms' },
-        { label: 'Details', value: 'details' },
+        { label: 'Illustrations', value: 'forms' },
+        { label: 'Description', value: 'details' },
         { label: 'Types', value: 'types' },
         { label: 'Stats', value: 'stats' },
         { label: 'Abilities', value: 'abilities' },

@@ -10,7 +10,7 @@ const Types = () => {
         if (currentPokemon) {
             (async () => {
                 const pkmnData = await fetchPokemonData(currentPokemon.id);
-                if (!pkmnData) {
+                if (pkmnData) {
                     const types = await getTypesDetails(pkmnData.types);
                     const typesImages = types.map((type: any) => type.sprites['generation-viii']['legends-arceus'].name_icon);
                     setTypesImagesUrls(typesImages);
